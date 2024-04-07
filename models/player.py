@@ -8,6 +8,9 @@ class Player(BaseModel):
     name: str
     handicap: float
 
-class CreatePlayerRequest(BaseModel):
+class PlayerRequests(BaseModel):
     name: str
     handicap: float
+
+class PlayerResponse(BaseModel):
+    id: UUID
